@@ -36,6 +36,8 @@ namespace FlubuCore.Context.FluentInterface.Interfaces
         /// <returns>This same instance of <see cref="ITargetInternal" />.</returns>
         new ITarget AddTaskAsync(Func<ITaskFluentInterface, ITask> task);
 
+        new ITarget AddTarget(ITarget target);
+
         /// <summary>
         /// Add's the specified .net core task to the target that will be run asynchronous with other tasks.
         /// </summary>
